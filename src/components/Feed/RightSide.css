@@ -1,0 +1,79 @@
+.other{
+  border: 1px solid #A0A0A0;
+  border-radius: 8px;
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.rank-inside{
+  border: 1px solid #000000;
+  border-radius: 8px;
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.paging{
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  font-weight: bold;
+}
+
+.display-info{
+
+}
+
+.path-button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+  row-gap: 5px;
+}
+.my-page{
+  background-color: black;
+  color: white;
+  border: 1px solid #E9E9E9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.game-group{
+  border: 1px solid #041A2C;
+  border-radius: 8px;
+  background-color: #E9E9E9;
+  text-align: center;
+  padding: 10px;
+}
+
+.create-group{
+  background-color: #3F649B;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.login-button{
+  background-color: rgba(4, 26, 44, 0.8);
+  color: white;
+  border: 1px solid #A0A0A0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bolder;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+.forgot{
+  color: #A0A0A0;
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+.search-outside{
+  background-color: rgba(4, 26, 44, 0.5);
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.search-inside {
+  background-color: rgba(4, 26, 44, 0.8);
+  border-radius: 100px;
+  width: 100%;
+  outline: none;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-search{
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  color: white;
+}
+.custom-search::placeholder {
+  color: white;
+}
+
+.account{
+  border: 1px solid rgba(4, 26, 44, 0.8);
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 30px 10px;
+  border-radius: 8px;
+  color: black;
+}
+
+

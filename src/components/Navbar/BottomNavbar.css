@@ -1,0 +1,19 @@
+.term{
+  background-color: #D9D9D9;
+  color: rgba(4, 26, 44, 1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.term-a{
+  color: rgba(4, 26, 44, 1);
+  font-weight: bold;
+}
+
+.company{
+  color: #A0A0A0;
+  display: flex;
+}

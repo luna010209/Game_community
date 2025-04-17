@@ -1,0 +1,80 @@
+.dis{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inside{
+  /* border: 1px solid darkblue; */
+  border-radius: 30px;
+  box-shadow: 0px 6px 15px #001C41;
+  display: flex;
+
+}
+
+.img{
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.check-box{
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  accent-color: darkblue;
+  width: 25px;
+  height: 25px;
+}
+
+.all{
+  color:#3F649B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.submit {
+  /* 로그인 버튼 */
+
+  box-sizing: border-box;
+  width: 160px;
+  height: 50px;
+  left: calc(50% - 160px/2);
+  top: 573px;
+
+  background: rgba(4, 26, 44, 0.8);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  color: white;
+
+  font-weight: bolder;
+  font-size: large;
+}
+
+.form-input{
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  box-shadow: 0px 6px 4px rgba(4, 26, 44, 0.5);
+  background-color: rgba(4, 26, 44, 0.05);
+  padding-left: 3%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.address{
+  border-bottom: 2px solid rgba(4, 26, 44, 0.8);
+}
+
+.code-add{
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  box-shadow: 0px 6px 4px rgba(4, 26, 44, 0.5);
+  background-color: rgba(4, 26, 44, 0.05);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
