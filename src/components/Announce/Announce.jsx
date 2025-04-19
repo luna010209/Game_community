@@ -1,25 +1,18 @@
 import React from 'react'
-import "./Feed.css"
+import "./Announce.css"
 import Navbar_Nonlogin from '../Navbar/Navbar_Nonlogin'
 import BottomNavbar from '../Navbar/BottomNavbar'
 import RightSide from '../Side/RightSide2'
 import RightSide_Nonlogin from '../Side/RightSide_Nonlogin2'
 
-const Feed = () => {
+const Announce = () => {
   return (
     <div>
       <Navbar_Nonlogin/>
       <div className='d-flex w-100 mt-2 mb-2 justify-content-center'>
         <div className='col-12 col-lg-10 d-flex'>
           <div className='col-12 col-lg-8 ps-2 pe-2'>
-            <div className='w-100 d-flex justify-content-between'>
-              <button className='feed'>피드</button>
-              <a href="/feed/create" role='button' className='create-feed'>
-                <img src="/assets/feed/createfeed.svg" height={30}/>게시물 작성
-              </a>
-            </div>
-            <hr className='border border-3 border-dark'/>
-            <div className='feed-content'>
+            <div className='announce-content'>
               <div className='one-post mb-2'>
                 <div className='info'>
                   <div style={{fontWeight:"bolder"}}><img src="/assets/mypage/avatar.png" height={40} className='me-2'/>체스트넛</div>
@@ -95,4 +88,4 @@ const Feed = () => {
   )
 }
 
-export default Feed
+export default Announce

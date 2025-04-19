@@ -15,6 +15,9 @@ import UserInfo from './components/UserInfo/UserInfo'
 import Guild from './components/Guild/Guild'
 import GuildDetail from './components/Guild/GuildDetail'
 import GuildMember from './components/Guild/GuildMember'
+import CreateGuild from './components/Guild/CreateGuild'
+import Announce from './components/Announce/Announce'
+import FAQ from './components/FAQ/FAQ'
 
 function App() {
 
@@ -24,19 +27,22 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/navbar' element={<Navbar />}/>
-          <Route path='/terms' element={<Terms/>}/>
-          <Route path='/signup1' element={<Signup1/>}/>
-          <Route path='/signup2' element={<Signup2/>}/>
-          <Route path='/signup3' element={<Signup3/>}/>
+          <Route path='/signup/terms' element={<Terms/>}/>
+          <Route path='/signup/signup1' element={<Signup1/>}/>
+          <Route path='/signup/signup2' element={<Signup2/>}/>
+          <Route path='/signup/signup3' element={<Signup3/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/my-page' element={<PersonalInfo/>}/>
-          <Route path='/note' element={<Note/>}/>
+          <Route path='/my-page/note' element={<Note/>}/>
           <Route path='/feed' element={<Feed/>}/>
-          <Route path='/create-feed' element={<CreateFeed/>}/>
+          <Route path='/feed/create' element={<CreateFeed/>}/>
           <Route path='/user-info' element={<UserInfo/>}/>
           <Route path='/guild' element={<Guild/>}/>
           <Route path='/guild/:id' element={<GuildDetail/>}/>
           <Route path='/guild/:id/member' element={<GuildMember/>}/>
+          <Route path='/guild/create' element={<CreateGuild/>}/>
+          <Route path='/announce' element={<Announce/>}/>
+          <Route path='/faq' element={<FAQ/>}/>
         </Routes>
       </BrowserRouter>
       

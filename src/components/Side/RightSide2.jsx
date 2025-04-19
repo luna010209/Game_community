@@ -1,5 +1,5 @@
 import React from 'react'
-import "./RightSide.css"
+import "./RightSide2.css"
 import Ad from '../Ad/Ad'
 
 const RightSide = () => {

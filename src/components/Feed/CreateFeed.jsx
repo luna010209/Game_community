@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Feed.css"
 import Navbar from '../Navbar/Navbar'
-import RightSide from './RightSide'
+import RightSide from '../Side/RightSide2'
 import BottomNavbar from '../Navbar/BottomNavbar'
 
 const CreateFeed = () => {
@@ -37,8 +37,8 @@ const CreateFeed = () => {
           <div className='col-12 col-lg-8 ps-2 pe-2'>
             <div className='w-100 d-flex justify-content-between mb-2'>
               <button className='feed'>피드</button>
-              <a href="/create-feed" role='button' className='create-feed'>
-                <img src="/assets/feed/createfeed.svg" height={30} />게시물 작성
+              <a href="/feed" role='button' className='create-feed'>
+                <i className="fa-solid fa-backward me-2"></i> 뒤돌아가기
               </a>
             </div>
             <div className='feed-catalog'>
@@ -112,7 +112,7 @@ const CreateFeed = () => {
                 <div className={`text-danger ${numOfFile}`}>❗️업로드 파일이 최대 3개입니다.</div>
               </div>
             </div>
-            <div className='d-flex w-100 justify-content-center mt-5'>
+            <div className='d-flex w-100 justify-content-center mt-5 pt-4'>
               <button type='button' className='done-button'>등록</button>
               <button type='button' className='cancel-button'>취소</button>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Ad from '../Ad/Ad'
-import "./RightSide.css"
+import "./RightSide1.css"
 
 const RightSide = () => {
   return (
@@ -30,14 +30,14 @@ const RightSide = () => {
             </div>
             <div className='col-5 path-button'>
               <div className='col-12 text-center my-page'><a href="/my-page" role='button'>내정보</a></div>
-              <div className='col-12 text-center my-page'><a href="/note" role='button'>쪽지함</a></div>
+              <div className='col-12 text-center my-page'><a href="/my-page/note" role='button'>쪽지함</a></div>
             </div>
           </div>
           <div className='col-6 ps-2'>
             <div className='game-group'>
               <h6 className='fw-bold mt-2'>길드 아직 없습니까?</h6>
               <div className='d-flex justify-content-center p-2 gap-3'>
-                <div className='create-group'><a href="#" role='button'>길드 생성</a></div>
+                <div className='create-group'><a href="/guild/create" role='button'>길드 생성</a></div>
                 <div className='create-group'><a href="#" role='button'>길드 가입</a></div>
               </div>
             </div>

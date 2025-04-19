@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import "./Guild.css";
 import Navbar from '../Navbar/Navbar';
 import BottomNavbar from '../Navbar/BottomNavbar';
-import RightSide from '../Side/RightSide';
+import RightSide from '../Side/RightSide1';
 import { useNavigate } from 'react-router-dom';
 
 const Guild = () => {
@@ -30,7 +30,7 @@ const Guild = () => {
           <div className='col-12 col-lg-8 pe-2 '>
             <div className='w-100 d-flex justify-content-between mb-2'>
               <button className='feed'>길드</button>
-              <a href="/create-guild" role='button' className='create-feed'>
+              <a href="/guild/create" role='button' className='create-feed'>
                 <img src="/assets/feed/createfeed.svg" height={30}/>길드 작성
               </a>
             </div>

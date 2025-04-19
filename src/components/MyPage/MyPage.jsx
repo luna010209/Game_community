@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./MyPage.css";
 import Navbar from '../Navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 const MyPage = () => {
   const contentRef = useRef();
@@ -9,6 +10,8 @@ const MyPage = () => {
     const height = contentRef.current?.offsetHeight || 0;
     setSpaceHeight(height/2+20);
   }, []);
+
+  const navigator = useNavigate();
   return (
     <div style={{marginBottom: spaceHeight}}>
       <div className='position-relative'>
@@ -29,7 +32,7 @@ const MyPage = () => {
                 <div>
                   <div className='d-flex'>
                     <h2 className='fw-bold me-2'>체스트넛님</h2>
-                    <button className='inbox'><b>쪽지함</b></button>
+                    <button className='inbox' type='button' onClick={()=>{navigator("/my-page/note")}}><b>쪽지함</b></button>
                   </div>
                   <div className='ms-5'>
                       랭크: <strong>1위</strong><br/>
@@ -38,8 +41,8 @@ const MyPage = () => {
                   </div>
                 </div>
                 <div className='text-end'>
-                  <a href="#" className='path'>길드 찾기</a>
-                  <a href="#" className='path'>길드 만들기</a>
+                  <a href="/guild" className='path'>길드 찾기</a>
+                  <a href="/guild/create" className='path'>길드 만들기</a>
                   <a href="#" className='path'>길드관리</a>
                   <a href="#" className='path'>후원 구독</a>
                 </div>

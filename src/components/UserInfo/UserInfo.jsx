@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import "./UserInfo.css"
 import Navbar from '../Navbar/Navbar'
 import BottomNavbar from '../Navbar/BottomNavbar'
-import RightSide from '../Side/RightSide'
+import RightSide from '../Side/RightSide1'
 
 const UserInfo = () => {
   const dataDefault = [

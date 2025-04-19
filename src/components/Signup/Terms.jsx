@@ -47,8 +47,11 @@ const Terms = () => {
 
   const navigator = useNavigate();
   const next = ()=>{
-    if (check1 && check2 && check3 && check4 && check5)
-      navigator("/signup1")
+    if (check1 && check2 && check3 && check4 && check5){
+      alert("")
+      navigator("/signup/signup1");
+    }
+      
     else alert("필수 정보를 모두 동의하셔야 합니다!")
   }
   return (

@@ -63,3 +63,79 @@
   text-align: center;
   font-weight: bolder;
 }
+
+.team-title{
+  background-color: rgba(4, 26, 44, 0.1);
+  border: 1px solid rgba(4, 26, 44, 0.8);
+  color: rgba(4, 26, 44, 0.8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.create-guild{
+  border-radius: 10px;
+  border: 1px solid #A0A0A0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+}
+.display-box{
+  background-color: rgba(4, 26, 44, 0.05);
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.display-box input{
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 80%;
+}
+
+.display-box input::placeholder {
+  color: #A0A0A0;
+  font-weight: bold;
+}
+
+.display-box textarea{
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.display-box textarea::placeholder {
+  color: #A0A0A0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.address-info{
+  color: #A0A0A0;
+  border-bottom: 2px solid rgba(4, 26, 44, 0.8);
+}
+
+.button-code{
+  background-color: rgba(4, 26, 44, 0.05);
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: black;
+  border: none;
+  font-weight: bolder;
+}
+
+.guild-done{
+  background-color: rgba(4, 26, 44, 0.8);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 40px;
+  font-weight: bolder;
+}
+

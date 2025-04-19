@@ -12,30 +12,30 @@ return (
             </div>
             <img src="/assets/logo.png" height={60}/>
             <div className='d-none d-lg-flex nav-menu col-3 justify-content-end'>
-              <li><a href="/terms">회원가입</a></li>
+              <li><a href="/signup/terms">회원가입</a></li>
               <li className='fw-bold'><a href="/login">로그인</a></li>
             </div>
             <div className='align-items-center d-flex d-lg-none'>
               <button className="toggler" type="button">
-                <img src="/assets/toggler.png" height={50}/>
+                <img src="/assets/toggler.png" height={40}/>
               </button>
             </div>
           </div>
           <div className='nav-menu justify-content-between col-12 col-lg-6 mt-3 d-none d-lg-flex'>
               <li><a href="/feed">피드</a></li>
               <li><a href="/user-info">유저정보</a></li>
-              <li><a href="#">길드</a></li>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="/guild">길드</a></li>
+              <li><a href="/announce">공지사항</a></li>
+              <li><a href="/faq">FAQ</a></li>
           </div>
           <div className='drop-down d-lg-none p-2'>
               <li><a href="/feed"><i className="fa-solid fa-square-rss me-2"></i>피드</a></li>
               <li><a href="/user-info"><i className="fa-solid fa-users me-2"></i>유저정보</a></li>
-              <li><a href="#">길드</a></li>
-              <li><a href="#">공지사항</a></li>
+              <li><a href="/guild">길드</a></li>
+              <li><a href="/announce">공지사항</a></li>
               <li><a href="#">FAQ</a></li>
-              <li><a href="#">회원가입</a></li>
-              <li><a href="#">로그인</a></li>
+              <li><a href="/signup/terms">회원가입</a></li>
+              <li><a href="/login">로그인</a></li>
           </div>
       </div>
       <div className='text-center'><img src="/assets/bg.png" className='col-12 col-lg-10 img-fluid'/></div>

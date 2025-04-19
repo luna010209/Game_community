@@ -110,7 +110,7 @@ const Signup = () => {
     e.preventDefault();
     if (validId==="is-valid" && validNickname==="is-valid" && validPw==="is-valid"
       && validPwCf==="is-valid" && validEmail==="is-valid"
-    ) navigator("/signup2");
+    ) navigator("/signup/signup2");
     else alert("다시 확인해주세요!")
   }
 
