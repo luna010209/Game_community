@@ -12,12 +12,12 @@ const Home = () => {
             <li><a href="/feed">피드</a></li>
             <li><a href="/user-info">유저정보</a></li>
             <li><a href="/guild">길드</a></li>
-            <li>공지사항</li>
-            <li>FAQ</li>
+            <li><a href="/announce">공지사항</a></li>
+            <li><a href="/faq">FAQ</a></li>
           </div>
           <div className='nav-menu d-none d-lg-flex col-2 justify-content-end'>
             <li><i class="fa-solid fa-language me-2"></i>한국어</li>
-            <li><a href="/terms">회원가입</a></li>
+            <li><a href="/signup/terms">회원가입</a></li>
             <li><a href="/login">로그인</a></li>
           </div>
         </div>

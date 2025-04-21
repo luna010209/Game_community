@@ -18,6 +18,8 @@ import GuildMember from './components/Guild/GuildMember'
 import CreateGuild from './components/Guild/CreateGuild'
 import Announce from './components/Announce/Announce'
 import FAQ from './components/FAQ/FAQ'
+import FAQDetail from './components/FAQ/FAQDetail'
+import CreateFAQ from './components/FAQ/CreateFAQ'
 
 function App() {
 
@@ -43,6 +45,8 @@ function App() {
           <Route path='/guild/create' element={<CreateGuild/>}/>
           <Route path='/announce' element={<Announce/>}/>
           <Route path='/faq' element={<FAQ/>}/>
+          <Route path='/faq/:id' element={<FAQDetail/>}/>
+          <Route path='/faq/create' element={<CreateFAQ/>}/>
         </Routes>
       </BrowserRouter>
       
