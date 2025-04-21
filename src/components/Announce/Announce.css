@@ -6,6 +6,32 @@
   font-weight: bold;
   font-size: 20px;
 }
+.pop-up{
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid rgba(4, 26, 44, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+.popup-title{
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(4, 26, 44, 0.8);
+}
+.popup-content{
+  padding: 20px;
+  background-color: #D9D9D9;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.disappear input{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
 
 .create-feed{
   color: #626262;
