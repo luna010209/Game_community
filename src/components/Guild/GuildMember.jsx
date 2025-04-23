@@ -24,8 +24,8 @@ const GuildMember = () => {
     <div>
       <Navbar />
       <div className='d-flex w-100 mt-2 mb-2 justify-content-center'>
-        <div className='col-12 col-lg-10 d-flex'>
-          <div className='col-12 col-lg-8 pe-2'>
+        <div className='col-12 col-xl-10 d-flex'>
+          <div className='col-12 col-xl-8 pe-2'>
             <div className='w-100 d-flex justify-content-between mb-2'>
               <button className='feed'>길드 정보</button>
               <a href="/guild/create" role='button' className='create-feed'>
@@ -33,7 +33,7 @@ const GuildMember = () => {
               </a>
             </div>
             <div className='guild-info w-100 mb-2'>
-              <div className='d-none d-lg-block col-3 p-2'>
+              <div className='d-none d-xl-block col-3 p-2'>
                 <img src="/assets/guild/guild1.png" className='border border-1 border-dark rounded mb-2 w-50' /><br />
                 <span className='level'>LV.72</span><br />
                 <span style={{ fontSize: "20px", fontWeight: "bolder", color: "black" }}>CHESTNUT</span>
@@ -48,7 +48,7 @@ const GuildMember = () => {
                   <a href="#" role='button' className='create-team col-5'>팀 생성</a>
                 </div>
               </div>
-              <div className='col-12 col-lg-9 base-info text-dark p-2'>
+              <div className='col-12 col-xl-9 base-info text-dark p-2'>
                 <div className='user-info w-100'>
                   <div className='d-flex'>
                     <div className='title-catalog col-2'>순위</div>

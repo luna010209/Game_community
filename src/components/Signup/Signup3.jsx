@@ -7,10 +7,10 @@ const Signup3 = () => {
   const [detailAdd, setDetailAdd]= useState("");
   return (
     <div className='dis' style={{backgroundColor:"rgba(4, 26, 44, 0.15)", height:"100vh"}}>
-      <div className='col-12 col-lg-10 bg-white inside p-4'>
-        <img src="/assets/signup/lsg.png" className='img d-none d-lg-flex col-5'/>
-        <div className='col-12 col-lg-7 dis' style={{color:"#001C41"}}>
-          <div className='col-12 col-lg-9'>
+      <div className='col-12 col-xl-10 bg-white inside p-4'>
+        <img src="/assets/signup/lsg.png" className='img d-none d-xl-flex col-5'/>
+        <div className='col-12 col-xl-7 dis' style={{color:"#001C41"}}>
+          <div className='col-12 col-xl-9'>
             <h1 style={{color:"rgba(4, 26, 44, 0.8)", fontWeight:"bolder", textAlign:"center"}} className='mb-5'>회원가입</h1>
             <div className='address ps-5 mb-3'><h5 className='fw-bold'><i className="fa-solid fa-location-dot me-2"></i>주소</h5></div>
             <form action="submit" className='dis flex-wrap'>

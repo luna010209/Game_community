@@ -20,6 +20,7 @@ import Announce from './components/Announce/Announce'
 import FAQ from './components/FAQ/FAQ'
 import FAQDetail from './components/FAQ/FAQDetail'
 import CreateFAQ from './components/FAQ/CreateFAQ'
+import UserDetail from './components/UserInfo/UserDetail'
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path='/feed' element={<Feed/>}/>
           <Route path='/feed/create' element={<CreateFeed/>}/>
           <Route path='/user-info' element={<UserInfo/>}/>
+          <Route path='/user-info/:id' element={<UserDetail/>}/>
           <Route path='/guild' element={<Guild/>}/>
           <Route path='/guild/:id' element={<GuildDetail/>}/>
           <Route path='/guild/:id/member' element={<GuildMember/>}/>

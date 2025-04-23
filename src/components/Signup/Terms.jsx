@@ -48,7 +48,6 @@ const Terms = () => {
   const navigator = useNavigate();
   const next = ()=>{
     if (check1 && check2 && check3 && check4 && check5){
-      alert("")
       navigator("/signup/signup1");
     }
       
@@ -56,10 +55,10 @@ const Terms = () => {
   }
   return (
     <div className='dis' style={{backgroundColor: "rgba(4, 26, 44, 0.15)", height: "100vh" }}>
-      <div className='col-12 col-lg-10 p-4 bg-white inside'>
-        <img src="/assets/signup/lsg.png" className='img d-none d-lg-flex col-5'/>
-        <div className='col-12 col-lg-7 dis' style={{color:"#001C41"}}>
-          <div className='col-11 col-lg-9'>
+      <div className='col-12 col-xl-10 p-4 bg-white inside'>
+        <img src="/assets/signup/lsg.png" className='img d-none d-xl-flex col-5'/>
+        <div className='col-12 col-xl-7 dis' style={{color:"#001C41"}}>
+          <div className='col-11 col-xl-9'>
             <div className='check-box'>
               <input type='checkbox' className='me-2' style={{ accentColor: "#3F649B", width: "35px", height: "35px" }}
               checked={allCheck} onChange={handleAllCheck}/>

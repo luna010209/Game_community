@@ -7,15 +7,15 @@ const Home = () => {
     <div>
       <div className='main-area'>
         <div className='d-flex position-fixed w-100 justify-content-between align-items-center p-3'>
-          <div className='d-none d-lg-flex col-2'><img src="/assets/logo.png" height={60}/></div>
-          <div className='nav-menu col-12 col-lg-6 justify-content-between'>
+          <div className='d-none d-xl-flex col-2'><img src="/assets/logo.png" height={60}/></div>
+          <div className='nav-menu col-12 col-xl-6 justify-content-between'>
             <li><a href="/feed">피드</a></li>
             <li><a href="/user-info">유저정보</a></li>
             <li><a href="/guild">길드</a></li>
             <li><a href="/announce">공지사항</a></li>
             <li><a href="/faq">FAQ</a></li>
           </div>
-          <div className='nav-menu d-none d-lg-flex col-2 justify-content-end'>
+          <div className='nav-menu d-none d-xl-flex col-2 justify-content-end'>
             <li><i class="fa-solid fa-language me-2"></i>한국어</li>
             <li><a href="/signup/terms">회원가입</a></li>
             <li><a href="/login">로그인</a></li>

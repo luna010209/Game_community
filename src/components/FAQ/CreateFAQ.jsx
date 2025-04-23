@@ -33,8 +33,8 @@ const CreateFAQ = () => {
     <div>
       <Navbar />
       <div className='d-flex w-100 mt-2 mb-2 justify-content-center'>
-        <div className='col-12 col-lg-10 d-flex'>
-          <div className='col-12 col-lg-8 ps-2 pe-2'>
+        <div className='col-12 col-xl-10 d-flex'>
+          <div className='col-12 col-xl-8 ps-2 pe-2'>
             <div className='w-100 d-flex justify-content-between mb-2'>
               <button className='feed'>FAQ</button>
               <a href="/faq" role='button' className='create-feed'>

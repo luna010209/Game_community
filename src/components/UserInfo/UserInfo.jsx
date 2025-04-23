@@ -3,6 +3,7 @@ import "./UserInfo.css"
 import Navbar from '../Navbar/Navbar'
 import BottomNavbar from '../Navbar/BottomNavbar'
 import RightSide from '../Side/RightSide1'
+import { useNavigate } from 'react-router-dom'
 
 const UserInfo = () => {
   const dataDefault = [
@@ -19,12 +20,14 @@ const UserInfo = () => {
     }
   }, []);
 
+  const navigator = useNavigate();
+
   return (
     <div>
       <Navbar/>
       <div className='d-flex w-100 mt-2 mb-2 justify-content-center'>
-        <div className='col-12 col-lg-10 d-flex'>
-          <div className='col-12 col-lg-8 pe-2 '>
+        <div className='col-12 col-xl-10 d-flex'>
+          <div className='col-12 col-xl-8 pe-2 '>
             <div className='w-100 d-flex justify-content-between mb-2'>
               <button className='feed'>유저정보</button>
             </div>
@@ -37,7 +40,8 @@ const UserInfo = () => {
               </div>
               <div style={{height:height, cursor:"pointer"}} className='detail'>
                 {dataSample.map((data, idx)=>(
-                  <div key={idx} className='d-flex text-dark' style={{background: idx%2===0? "":"#D9D9D9"}}>
+                  <div key={idx} className='d-flex text-dark' style={{background: idx%2===0? "":"#D9D9D9"}}
+                  onClick={()=>{navigator(`/user-info/${idx+1}`)}}>
                     <div className='one-line col-3 ps-2 pe-2'><img src="/assets/mypage/avatar.png" className='me-1' height={30} />{data.nickname}</div>
                     <div className='one-line col-5 ps-2 pe-2'><img src="/assets/mypage/avatar.png" className='me-1' height={30} />{data.group}</div>
                     <div className='one-line col-2 ps-2 pe-2 justify-content-center'>{data.ranking}</div>

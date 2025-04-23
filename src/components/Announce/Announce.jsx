@@ -17,8 +17,8 @@ const Announce = () => {
     <div>
       <div className='position-relative'>
         <Navbar_Nonlogin />
-        <div className={`w-100 d-flex position-fixed ${appear}`} style={{top:"15%", left:"50%"}}>
-          <div className='d-none d-lg-block col-4 pop-up'>
+        <div className={`w-100 d-flex position-absolute ${appear}`} style={{top:"20%", left:"50%"}}>
+          <div className='d-none d-xl-block col-4 pop-up'>
             <div className='popup-title'>
               <h4 className='fw-bold text-dark'>정기점검 공지사항</h4>
             </div>
@@ -49,8 +49,8 @@ const Announce = () => {
       </div>
 
       <div className='d-flex w-100 mt-2 mb-2 justify-content-center' style={{ opacity: announce ? 0.3 : 1 }}>
-        <div className='col-12 col-lg-10 d-flex'>
-          <div className='col-12 col-lg-8 ps-2 pe-2'>
+        <div className='col-12 col-xl-10 d-flex'>
+          <div className='col-12 col-xl-8 ps-2 pe-2'>
             <div className='announce-content'>
               <div className='one-post mb-2'>
                 <div className='info'>

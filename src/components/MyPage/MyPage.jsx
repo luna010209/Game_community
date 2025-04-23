@@ -17,8 +17,8 @@ const MyPage = () => {
       <div className='position-relative'>
         <Navbar />
         <div className='content' ref={contentRef}>
-          <div className='col-12 col-lg-10 content-inside position-relative'>
-            <div className='d-none d-lg-flex col-12'>
+          <div className='col-12 col-xl-10 content-inside position-relative'>
+            <div className='d-none d-xl-flex col-12'>
               <div className='col-1'></div>
               <div className='position-relative col-2'>
                 <img src="/assets/mypage/avatar.png" className='avatar w-100'/>
@@ -27,7 +27,7 @@ const MyPage = () => {
                 </div>
               </div>
             </div>
-            <div className='col-12 col-lg-9 position-absolute top-50 p-3'>
+            <div className='col-12 col-xl-9 position-absolute top-50 p-3'>
               <div className='text'>
                 <div>
                   <div className='d-flex'>

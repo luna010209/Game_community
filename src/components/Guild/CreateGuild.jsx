@@ -13,8 +13,8 @@ const CreateGuild = () => {
     <div>
       <Navbar />
       <div className='d-flex w-100 mt-2 mb-2 justify-content-center'>
-        <div className='col-12 col-lg-10 d-flex'>
-          <div className='col-12 col-lg-8 pe-2 '>
+        <div className='col-12 col-xl-10 d-flex'>
+          <div className='col-12 col-xl-8 pe-2 '>
             <div className='w-100 d-flex justify-content-between mb-2'>
               <button className='feed'>길드 작성</button>
               <a href="/guild" role='button' className='create-feed'>

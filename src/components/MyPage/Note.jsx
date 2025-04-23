@@ -40,7 +40,7 @@ const Note = () => {
     <div>
       <MyPage />
       <div className='overall mb-3'>
-        <div className='col-12 col-lg-10 note'>
+        <div className='col-12 col-xl-10 note'>
           <div className='d-flex w-100'>
             {/* <span className='col-4 text-center p-2'>받은 쪽지</span>
             <span className='col-4 text-center p-2 non-active'>보낸 쪽지</span>
@@ -102,22 +102,22 @@ const Note = () => {
             {/* 쪽지 쓰기 */}
             <form action="submit" className={`${activeIdx == 2 ? "" : "d-none"}`}>
               <div className='d-flex w-100 align-items-center mb-2'>
-                <div className='d-none d-lg-block col-2'>받은 사람</div>
-                <div className='col-12 col-lg-10'>
+                <div className='d-none d-xl-block col-2'>받은 사람</div>
+                <div className='col-12 col-xl-10'>
                   <input type="text" className={`form-control`} required
                     value={receiver} onChange={e => { setReceiver(e.target.value) }} />
                 </div>
               </div>
               <div className='d-flex w-100 align-items-center mb-2'>
-                <div className='d-none d-lg-block col-2'>제목</div>
-                <div className='col-12 col-lg-10'>
+                <div className='d-none d-xl-block col-2'>제목</div>
+                <div className='col-12 col-xl-10'>
                   <input type="text" className={`form-control`} required
                     value={title} onChange={e => { setTitle(e.target.value) }} />
                 </div>
               </div>
               <div className='d-flex w-100 align-items-center mb-2'>
-                <div className='d-none d-lg-block col-2'>내용</div>
-                <div className='col-12 col-lg-10'>
+                <div className='d-none d-xl-block col-2'>내용</div>
+                <div className='col-12 col-xl-10'>
                   <textarea className={`form-control`} required rows={10}
                     value={content} onChange={e => { setContent(e.target.value) }}></textarea>
                 </div>
