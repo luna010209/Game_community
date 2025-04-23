@@ -5,6 +5,7 @@ import BottomNavbar from '../Navbar/BottomNavbar'
 import RightSide from '../Side/RightSide1'
 import Graph from './Graph'
 import BattleDetail from './BattleDetail'
+import BattleLose from './BattleLose'
 
 const UserDetail = () => {
   const divRef = useRef(null);
@@ -22,6 +23,11 @@ const UserDetail = () => {
     { "isWin": true, "time": "10일 전", "ranking": "1위", "user": "사자" },
     { "isWin": true, "time": "10일 전", "ranking": "1위", "user": "사자" },
   ]
+
+  const [visible, setVisible] = useState(null);
+  const handleMore = (idx)=>{
+    setVisible(prev=> prev=== idx ? null : idx)
+  }
 
   return (
     <div>
@@ -115,12 +121,12 @@ const UserDetail = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='col-1 more' style={{ backgroundColor: data.isWin ? "rgba(63, 100, 155, 1)" : "rgba(182, 182, 89, 1)" }}>
+                      <div onClick={()=>{handleMore(idx)}} className='col-1 more' style={{ backgroundColor: data.isWin ? "rgba(63, 100, 155, 1)" : "rgba(182, 182, 89, 1)" }}>
                         <u>더 보기</u>
                       </div>
                     </div>
-                    <div>
-                      <BattleDetail/>
+                    <div className={visible===idx ? "":"d-none"}>
+                      {data.isWin ? <BattleDetail /> : <BattleLose />}
                     </div>
                   </div>
                 ))}
