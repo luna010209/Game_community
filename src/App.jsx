@@ -1,26 +1,25 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './components/Home/Home'
-import Navbar from './components/Navbar/Navbar'
-import Terms from './components/Signup/Terms'
-import Signup1 from './components/Signup/Signup1'
-import Signup2 from './components/Signup/Signup2'
-import Signup3 from './components/Signup/Signup3'
-import Login from './components/Login/Login'
-import PersonalInfo from './components/MyPage/PersonalInfo'
-import Note from './components/MyPage/Note'
-import Feed from './components/Feed/Feed'
-import CreateFeed from './components/Feed/CreateFeed'
-import UserInfo from './components/UserInfo/UserInfo'
-import Guild from './components/Guild/Guild'
-import GuildDetail from './components/Guild/GuildDetail'
-import GuildMember from './components/Guild/GuildMember'
-import CreateGuild from './components/Guild/CreateGuild'
-import Announce from './components/Announce/Announce'
-import FAQ from './components/FAQ/FAQ'
-import FAQDetail from './components/FAQ/FAQDetail'
-import CreateFAQ from './components/FAQ/CreateFAQ'
-import UserDetail from './components/UserInfo/UserDetail'
+import Home from './pages/Home/Home'
+import Terms from './pages/Signup/Terms'
+import Signup1 from './pages/Signup/Signup1'
+import Signup2 from './pages/Signup/Signup2'
+import Signup3 from './pages/Signup/Signup3'
+import Login from './pages/Login/Login'
+import PersonalInfo from './pages/MyPage/PersonalInfo'
+import Note from './pages/MyPage/Note'
+import Feed from './pages/Feed/Feed'
+import CreateFeed from './pages/Feed/CreateFeed'
+import UserInfo from './pages/UserInfo/UserInfo'
+import Guild from './pages/Guild/Guild'
+import GuildDetail from './pages/Guild/GuildDetail'
+import GuildMember from './pages/Guild/GuildMember'
+import CreateGuild from './pages/Guild/CreateGuild'
+import Announce from './pages/Announce/Announce'
+import FAQ from './pages/FAQ/FAQ'
+import FAQDetail from './pages/FAQ/FAQDetail'
+import CreateFAQ from './pages/FAQ/CreateFAQ'
+import UserDetail from './pages/UserInfo/UserDetail'
 
 function App() {
 
@@ -29,7 +28,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/navbar' element={<Navbar />}/>
           <Route path='/signup/terms' element={<Terms/>}/>
           <Route path='/signup/signup1' element={<Signup1/>}/>
           <Route path='/signup/signup2' element={<Signup2/>}/>
@@ -39,8 +37,8 @@ function App() {
           <Route path='/my-page/note' element={<Note/>}/>
           <Route path='/feed' element={<Feed/>}/>
           <Route path='/feed/create' element={<CreateFeed/>}/>
-          <Route path='/user-info' element={<UserInfo/>}/>
-          <Route path='/user-info/:id' element={<UserDetail/>}/>
+          <Route path='/userinfo' element={<UserInfo/>}/>
+          <Route path='/userinfo/:id' element={<UserDetail/>}/>
           <Route path='/guild' element={<Guild/>}/>
           <Route path='/guild/:id' element={<GuildDetail/>}/>
           <Route path='/guild/:id/member' element={<GuildMember/>}/>

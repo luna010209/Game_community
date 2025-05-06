@@ -1,52 +1,45 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Navbar.css'
-// import logo from '../../assets/logo.png';
+import logo from '/assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar_Nonlogin = () => {
-  const [down, setDown] = useState("d-none");
-    const toggle = (e)=>{
-      e.preventDefault();
-      if (down==="d-none") setDown("");
-      else setDown("d-none");
-    }
-  return (
-      <div>
-        <div className='position-relative d-flex justify-content-center align-items-center flex-wrap p-2' style={{backgroundColor:"rgba(4, 26, 44, 0.8)"}}>
-            <div className='d-flex justify-content-between col-12 col-xl-10'>
-              <div className='d-none d-xl-flex nav-menu col-3'>
-                <li><i class="fa-solid fa-language me-2"></i>한국어</li>
-              </div>
-              <img src="/assets/logo.png" height={60}/>
-              <div className='d-none d-xl-flex nav-menu col-3 justify-content-end'>
-                <li><a href="/signup/terms">회원가입</a></li>
-                <li className='fw-bold'><a href="/login">로그인</a></li>
-              </div>
-              <div className='align-items-center d-flex d-xl-none'>
-                <button className="toggler" type="button" onClick={toggle}>
-                  <img src="/assets/toggler.png" height={40}/>
-                </button>
-              </div>
+return (
+    <div>
+      <div className='position-relative d-flex justify-content-center align-items-center flex-wrap p-2' style={{backgroundColor:"rgba(4, 26, 44, 0.8)"}}>
+          <div className='d-flex justify-content-between col-12 col-lg-10'>
+            <div className='d-none d-lg-flex nav-menu col-3'>
+              <li><i class="fa-solid fa-language me-2"></i>한국어</li>
             </div>
-            <div className='nav-menu justify-content-between col-12 col-xl-6 mt-3 d-none d-xl-flex'>
-                <li><a href="/feed">피드</a></li>
-                <li><a href="/user-info">유저정보</a></li>
-                <li><a href="/guild">길드</a></li>
-                <li><a href="/announce">공지사항</a></li>
-                <li><a href="/faq">FAQ</a></li>
+            <img src="/assets/logo.png" height={60}/>
+            <div className='d-none d-lg-flex nav-menu col-3 justify-content-end'>
+              <li><a href="/signup1">회원가입</a></li>
+              <li className='fw-bold'><a href="/login">로그인</a></li>
             </div>
-            <div className={`drop-down d-xl-none p-2 ${down}`}>
-                <li><a href="/feed"><i className="fa-solid fa-square-rss me-2"></i>피드</a></li>
-                <li><a href="/user-info"><i className="fa-solid fa-users me-2"></i>유저정보</a></li>
-                <li><a href="/guild">길드</a></li>
-                <li><a href="/announce">공지사항</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="/signup/terms">회원가입</a></li>
-                <li><a href="/login">로그인</a></li>
+            <div className='align-items-center d-flex d-lg-none'>
+              <button className="toggler" type="button">
+                <img src="/assets/toggler.png" height={50}/>
+              </button>
             </div>
-        </div>
-        <div className='text-center'><img src="/assets/bg.png" className='col-12 col-xl-10 img-fluid'/></div>
+          </div>
+          <div className='nav-menu justify-content-between col-12 col-lg-6 mt-3 d-none d-lg-flex'>
+              <li><Link to="/feed">피드</Link></li>
+              <li><Link to="/userinfo">유저정보</Link></li>
+              <li><Link to="/guild">길드</Link></li>
+              <li><Link to="/announce">공지사항</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
+          </div>
+          <div className='drop-down d-lg-none p-2'>
+              <li><Link to="/feed"><i className="fa-solid fa-square-rss me-2"></i>피드</Link></li>
+              <li><Link to="/userinfo"><i className="fa-solid fa-users me-2"></i>유저정보</Link></li>
+              <li><Link to="/guild">길드</Link></li>
+              <li><Link to="/announce">공지사항</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
+          </div>
       </div>
-    )
+      <div className='text-center'><img src="/assets/bg.png" className='col-12 col-lg-10 img-fluid'/></div>
+    </div>
+  )
 }
 
 export default Navbar_Nonlogin

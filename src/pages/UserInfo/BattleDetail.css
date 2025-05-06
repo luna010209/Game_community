@@ -1,0 +1,50 @@
+.win-title{
+  background-color: white;
+  color: #B8B8B8;
+  display: flex;
+}
+
+.one-record{
+  background-color: rgba(63, 100, 155, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%; /* You can use gradient too */
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+.total-win{
+  height: 100%; /* You can use gradient too */
+  background-color: #3F649B;
+  transition: width 0.5s ease-in-out;
+  display: flex;
+  justify-content: start;
+  padding-left: 5px;
+}
+.total-lose{
+  height: 100%;
+  background-color: #B6B659;
+  display: flex;
+  justify-content: end;
+  padding-right: 5px;
+}
+
+.center-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+

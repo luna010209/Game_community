@@ -32,6 +32,5 @@ a {
 .toggler{
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
 }
